@@ -1,0 +1,49 @@
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    background-color: #4b4b4b;
+    width: 50%;
+  }
+  
+  .task-item__description {
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+  
+  .task-item h2 {
+    color: #3a3a3a;
+    font-size: 1rem;
+    flex: 1;
+    margin: 0 1rem;
+    color: white;
+  }
+
+  .task-item button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: rgb(2 132 199);
+    font-size: 20px;
+  }
+
+  .task-item button:hover {
+    color: rgb(220 38 38);
+  }
+  
+  @media (min-width: 580px) {
+    .task-item__description {
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      flex: 1;
+    }
+  
+    .task-item__description h2 {
+      font-size: 1.25rem;
+    }
+  
+  }
